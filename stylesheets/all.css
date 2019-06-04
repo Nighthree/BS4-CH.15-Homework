@@ -10645,10 +10645,6 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-.form-relative {
-  position: relative;
-}
-
 .mail-icon-absolute {
   position: absolute;
   top: 16px;
@@ -10658,5 +10654,112 @@ a.text-dark:hover, a.text-dark:focus {
 .mail-input {
   padding-left: 60px;
   height: 56px;
+}
+
+.rectangle-warp {
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 256px;
+  overflow: hidden;
+}
+
+.rectangle-warp:hover, .rectangle-warp:active, .rectangle-warp:focus {
+  text-decoration: none;
+}
+
+.rectangle-warp:hover .rectangle-text, .rectangle-warp:active .rectangle-text, .rectangle-warp:focus .rectangle-text {
+  color: #3F5D45;
+}
+
+.rectangle-warp:hover .rectangle-color, .rectangle-warp:active .rectangle-color, .rectangle-warp:focus .rectangle-color {
+  background-color: rgba(255, 225, 128, 0.6);
+}
+
+.rectangle-warp:hover .rectangle-image, .rectangle-warp:active .rectangle-image, .rectangle-warp:focus .rectangle-image {
+  -webkit-filter: blur(0);
+          filter: blur(0);
+}
+
+.rectangle-warp.active {
+  text-decoration: none;
+}
+
+.rectangle-warp.active .rectangle-text {
+  color: #3F5D45;
+}
+
+.rectangle-warp.active .rectangle-color {
+  background-color: rgba(255, 225, 128, 0.6);
+}
+
+.rectangle-warp.active .rectangle-image {
+  -webkit-filter: blur(0);
+          filter: blur(0);
+}
+
+.rectangle-text {
+  font-size: 24px;
+  letter-spacing: 10px;
+  color: #EAF0ED;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+  position: absolute;
+  z-index: 4;
+}
+
+.rectangle-side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.rectangle-color {
+  background-color: rgba(63, 93, 69, 0.8);
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+}
+
+.rectangle-image {
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-transition: -webkit-filter 0.4s;
+  transition: -webkit-filter 0.4s;
+  transition: filter 0.4s;
+  transition: filter 0.4s, -webkit-filter 0.4s;
+}
+
+.rectangle-section {
+  margin-top: -90px;
+  margin-bottom: 90px;
+}
+
+.h496 {
+  height: 496px;
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center center;
+}
+
+.zindex-2 {
+  z-index: 2;
+}
+
+.zindex-3 {
+  z-index: 3;
 }
 /*# sourceMappingURL=all.css.map */

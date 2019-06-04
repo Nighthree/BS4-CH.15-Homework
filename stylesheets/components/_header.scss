@@ -1,0 +1,67 @@
+
+.rectangle-warp {
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 256px;
+  overflow: hidden;
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    .rectangle-text {
+      color: theme-color("primary");
+    }
+    .rectangle-color {
+      background-color: rgba(theme-color("warning"), 0.6);
+    }
+    .rectangle-image {
+      filter: blur(0);
+    }
+  }
+}
+.rectangle-warp.active{
+  text-decoration: none;
+    .rectangle-text {
+      color: theme-color("primary");
+    }
+    .rectangle-color {
+      background-color: rgba(theme-color("warning"), 0.6);
+    }
+    .rectangle-image {
+      filter: blur(0);
+    }
+}
+
+.rectangle-text {
+  font-size: 24px;
+  letter-spacing: 10px;
+  color: theme-color("light");
+  transition: color 0.4s;
+  position: absolute;
+  z-index: 4;
+}
+.rectangle-side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.rectangle-color {
+  background-color: rgba(theme-color("primary"), 0.8);
+  transition: background-color 0.4s;
+}
+
+.rectangle-image {
+  filter: blur(4px);
+  transition: filter 0.4s;
+}
+
+.rectangle-section{
+  margin-top: -90px;
+  margin-bottom: 90px;
+}
