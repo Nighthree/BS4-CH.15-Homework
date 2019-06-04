@@ -10633,7 +10633,7 @@ a.text-dark:hover, a.text-dark:focus {
 .logo {
   width: 114px;
   height: 18px;
-  background-image: url(/images/logotype-sm-dark.svg);
+  background-image: url(../images/logotype-sm-dark.svg);
   background-repeat: no-repeat;
 }
 
@@ -10641,7 +10641,7 @@ a.text-dark:hover, a.text-dark:focus {
   .logo {
     width: 220px;
     height: 40px;
-    background-image: url(/images/logo-all-dark.svg);
+    background-image: url(../images/logo-all-dark.svg);
   }
 }
 
