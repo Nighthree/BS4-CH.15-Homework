@@ -1,4 +1,3 @@
-
 .rectangle-warp {
   -webkit-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
@@ -23,17 +22,17 @@
     }
   }
 }
-.rectangle-warp.active{
+.rectangle-warp.active {
   text-decoration: none;
-    .rectangle-text {
-      color: theme-color("primary");
-    }
-    .rectangle-color {
-      background-color: rgba(theme-color("warning"), 0.6);
-    }
-    .rectangle-image {
-      filter: blur(0);
-    }
+  .rectangle-text {
+    color: theme-color("primary");
+  }
+  .rectangle-color {
+    background-color: rgba(theme-color("warning"), 0.6);
+  }
+  .rectangle-image {
+    filter: blur(0);
+  }
 }
 
 .rectangle-text {
@@ -60,8 +59,9 @@
   filter: blur(4px);
   transition: filter 0.4s;
 }
-
-.rectangle-section{
-  margin-top: -90px;
-  margin-bottom: 90px;
+@media (min-width: 768px) {
+  .rectangle-section {
+    margin-top: -90px;
+    margin-bottom: 90px;
+  }
 }

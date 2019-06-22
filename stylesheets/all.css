@@ -2041,22 +2041,22 @@ pre code {
 }
 
 .form-control::-webkit-input-placeholder {
-  color: #6c757d;
+  color: #8DA291;
   opacity: 1;
 }
 
 .form-control:-ms-input-placeholder {
-  color: #6c757d;
+  color: #8DA291;
   opacity: 1;
 }
 
 .form-control::-ms-input-placeholder {
-  color: #6c757d;
+  color: #8DA291;
   opacity: 1;
 }
 
 .form-control::placeholder {
-  color: #6c757d;
+  color: #8DA291;
   opacity: 1;
 }
 
@@ -5482,20 +5482,20 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .list-group-item-action {
   width: 100%;
-  color: #495057;
+  color: #3F5D45;
   text-align: inherit;
 }
 
 .list-group-item-action:hover, .list-group-item-action:focus {
   z-index: 1;
-  color: #495057;
+  color: #3F5D45;
   text-decoration: none;
-  background-color: #f8f9fa;
+  background-color: #EAF0ED;
 }
 
 .list-group-item-action:active {
-  color: #212529;
-  background-color: #e9ecef;
+  color: #3F5D45;
+  background-color: #EAF0ED;
 }
 
 .list-group-item {
@@ -5503,8 +5503,9 @@ a.badge-dark:focus, a.badge-dark.focus {
   display: block;
   padding: 0.75rem 1.25rem;
   margin-bottom: -1px;
+  color: #3F5D45;
   background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 1px solid #EAF0ED;
 }
 
 .list-group-item:last-child {
@@ -5512,16 +5513,16 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .list-group-item.disabled, .list-group-item:disabled {
-  color: #6c757d;
+  color: #8DA291;
   pointer-events: none;
   background-color: #fff;
 }
 
 .list-group-item.active {
   z-index: 2;
-  color: #fff;
-  background-color: #3F5D45;
-  border-color: #3F5D45;
+  color: #3F5D45;
+  background-color: #EAF0ED;
+  border-color: #8DA291;
 }
 
 .list-group-horizontal {
@@ -10741,9 +10742,11 @@ a.text-dark:hover, a.text-dark:focus {
   transition: filter 0.4s, -webkit-filter 0.4s;
 }
 
-.rectangle-section {
-  margin-top: -90px;
-  margin-bottom: 90px;
+@media (min-width: 768px) {
+  .rectangle-section {
+    margin-top: -90px;
+    margin-bottom: 90px;
+  }
 }
 
 .h496 {
@@ -10761,5 +10764,129 @@ a.text-dark:hover, a.text-dark:focus {
 
 .zindex-3 {
   z-index: 3;
+}
+
+.writing-rl {
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+}
+
+.section-break {
+  margin-top: -24px;
+  margin-bottom: -24px;
+}
+
+.btn-white {
+  background-color: white;
+  border: 1px solid #EAF0ED;
+}
+
+.btn-white:hover {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+.delete {
+  cursor: pointer;
+}
+
+.delete:hover {
+  color: black;
+}
+
+.delete:active {
+  background-color: #EAF0ED;
+}
+
+.item-image {
+  height: 315px;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.item-tag {
+  color: #EAF0ED;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  letter-spacing: 5px;
+  position: absolute;
+  left: 10px;
+}
+
+.item-name, .item-price {
+  border: 1px solid #EAF0ED;
+  font-size: 20px;
+}
+
+.heart {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.heart .show {
+  display: block;
+}
+
+.heart-border, .heart-full {
+  display: none;
+}
+
+.cart {
+  border-bottom: 1px solid #EAF0ED;
+}
+
+@media (max-width: 768px) {
+  .cart {
+    border: none;
+  }
+}
+
+.cart-image {
+  height: 110px;
+  min-width: 110px;
+}
+
+.cart-control .input-group .input-group-append .btn {
+  width: 45px;
+  height: 45px;
+}
+
+.cart-control .input-group .form-control {
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  border-top-color: #6c757d;
+  border-bottom-color: #6c757d;
+}
+
+@media (max-width: 768px) {
+  .price {
+    border-bottom: 1px solid #EAF0ED;
+    border-top: 1px solid #EAF0ED;
+  }
+}
+
+.cart-bill {
+  background-color: #3F5D45;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .cart-bill {
+    background-color: white;
+    color: #3F5D45;
+  }
+}
+
+@media (max-width: 768px) {
+  .cart-bill h5 {
+    background-color: #EAF0ED;
+  }
 }
 /*# sourceMappingURL=all.css.map */

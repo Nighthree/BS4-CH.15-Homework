@@ -11,3 +11,28 @@
 .zindex-3 {
   z-index: 3;
 }
+.writing-rl{
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+}
+.section-break{
+  margin-top: -24px;
+  margin-bottom: -24px;
+}
+.btn-white{
+  background-color: white;
+  border: 1px solid $light;
+  &:hover{
+    background-color: rgba($black, .075);
+  }
+}
+.delete{
+  cursor: pointer;
+  &:hover{
+    color: black;
+  }
+  &:active{
+    background-color: $light;
+  }
+  
+}

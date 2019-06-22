@@ -17,70 +17,148 @@
   <link rel="icon" href="images/favicon_48.ico">
   <link rel="apple-touch-icon" sizes="192*192" href="images/favicon_48.ico">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="stylesheets/all.css">
   <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/all.js"></script>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md navbar-light bg-transparent">
-    <div class="container">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <h1><a class="navbar-brand hidden-text logo mr-0" href="index.html">六角甜點工坊 sweetaste</a></h1> 
-      <div class="dropdown order-1">
-        <a href="" class="btn btn-cart text-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-shopping-cart"></i>
-        </a>
-        <div class="dropdown-menu dropdown-menu-right border-0 bg-light text-primary px-3">
-          還空空的！
-        </div>
-      </div>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto font-weight-bold">
-          <li class="nav-item px-md-6">
-            <a class="nav-link active" href="index.html">首頁<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item px-md-6">
-            <a class="nav-link" href="#">甜點</a>
-          </li>
-          <li class="nav-item px-md-6">
-            <a class="nav-link" href="#">登入</a>
-          </li>
-        </ul>
-      </div>
+  <nav class="navbar navbar-expand-md navbar-light bg-transparent container px-0">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <h1>
+      <a class="navbar-brand hidden-text logo mr-0" href="index.html">六角甜點工坊 sweetaste</a>
+    </h1>
+    <a href="cart.html" class="btn btn-cart text-primary order-md-1">
+      <i class="material-icons">shopping_cart</i>
+    </a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto font-weight-bold">
+        <li class="nav-item px-md-6">
+          <a class="nav-link active" href="index.html">首頁<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item px-md-6">
+          <a class="nav-link" href="product.html">甜點</a>
+        </li>
+        <li class="nav-item px-md-6">
+          <a class="nav-link" href="register.html">登入</a>
+        </li>
+      </ul>
     </div>
   </nav>
-<header class="header container">
-  <div class="h496 bg-cover" style="background-image: url(https://bit.ly/2OhbMHr)"></div>
-  <div class="row justify-content-center rectangle-section">
-    <div class="col-md-10">
-      <div class="row no-gutters font-weight-bolder">
-        <a href="#" class="col rectangle-warp active">
-          <span class="rectangle-text">本日精選</span>
-          <div class="rectangle-color rectangle-side zindex-3"></div>
-          <div class="rectangle-image bg-cover rectangle-side zindex-2" style="background-image: url(https://bit.ly/2QbVsVR">
-          </div>
-        </a>
-        <a href="#" class="col rectangle-warp">
-          <span class="rectangle-text">人氣推薦</span>
-          <div class="rectangle-color rectangle-side zindex-3"></div>
-          <div class="rectangle-image bg-cover rectangle-side zindex-2" style="background-image: url(https://images.unsplash.com/photo-1525059337994-6f2a1311b4d4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7ce5bbf66bdb4ed3b6965f0b3618aa43&auto=format&fit=crop&w=654&q=80)">
-          </div>
-        </a>
-        <a href="#" class="col rectangle-warp">
-          <span class="rectangle-text">新品上市</span>
-          <div class="rectangle-color rectangle-side zindex-3"></div>
-          <div class="rectangle-image bg-cover rectangle-side zindex-2" style="background-image: url(https://bit.ly/2R5tqwD)">
-          </div>
-        </a>
+  <header class="header container px-0">
+    <div class="h496 bg-cover" style="background-image: url(https://bit.ly/2OhbMHr)"></div>
+    <div class="row justify-content-center rectangle-section">
+      <div class="col-md-10">
+        <div class="row no-gutters font-weight-bolder">
+          <a href="#" class="col rectangle-warp active">
+            <span class="rectangle-text">本日精選</span>
+            <div class="rectangle-color rectangle-side zindex-3"></div>
+            <div class="rectangle-image bg-cover rectangle-side zindex-2"
+              style="background-image: url(https://bit.ly/2QbVsVR)">
+            </div>
+          </a>
+          <a href="#" class="col rectangle-warp">
+            <span class="rectangle-text">人氣推薦</span>
+            <div class="rectangle-color rectangle-side zindex-3"></div>
+            <div class="rectangle-image bg-cover rectangle-side zindex-2"
+              style="background-image: url(https://bit.ly/2Dwoxd7)">
+            </div>
+          </a>
+          <a href="#" class="col rectangle-warp">
+            <span class="rectangle-text">新品上市</span>
+            <div class="rectangle-color rectangle-side zindex-3"></div>
+            <div class="rectangle-image bg-cover rectangle-side zindex-2"
+              style="background-image: url(https://bit.ly/2OUteif)">
+            </div>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-</header>
+  </header>
+  <section class="bg-light">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-6 section-break">
+          <div class="h-100 bg-cover" style="background-image: url(https://bit.ly/2xPn7Eq);">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="d-flex flex-column text-primary writing-rl">
+            <div class="bg-cover w-100" style="background-image: url(images/lg-為什麼選擇了做甜點.svg);">
+            </div>
+            <p class="">青山依舊在，幾度夕陽紅。慣看秋月春風。</p>
+            <p>一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。</p>
+            <p>是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-3">
+    <img class="img-fluid d-none d-md-block mx-auto py-3" src="images/lg-想吃甜點是不需要理由的.svg" alt="" width="90">
+    <img class="img-fluid d-block d-md-none mx-auto" src="images/sm-橫式-想吃甜點是不需要理由的.svg" alt="" width="256">
+  </section>
+  <section class="container">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="item-card">
+          <div class="item-image" style="background-image: url(https://bit.ly/2zBjQuq)">
+            <div class="item-tag bg-primary p-2">本日精選</div>
+            <a href="#" class="heart text-primary" style="text-decoration: none;">
+              <i class="material-icons heart-border show">favorite_border</i>
+              <i class="material-icons heart-full">favorite</i>
+            </a>
+          </div>
+          <div class="d-flex text-center text-primary">
+            <div class="item-name col py-2">焦糖瑪卡龍</div>
+            <div class="item-price col py-2">NT$ 450</div>
+          </div>
+          <a href="" class="btn btn-light btn-block text-primary font-weight-bold py-2"
+            style="font-size: 24px">加入購物車</a>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="item-card">
+          <div class="item-image" style="background-image: url(https://bit.ly/2zBDAxX)">
+            <div class="item-tag bg-primary p-2">本日精選</div>
+            <a href="#" class="heart text-primary" style="text-decoration: none;">
+              <i class="material-icons heart-border show">favorite_border</i>
+              <i class="material-icons heart-full">favorite</i>
+            </a>
 
+          </div>
+          <div class="d-flex text-center text-primary">
+            <div class="item-name col py-2">焦糖瑪卡龍</div>
+            <div class="item-price col py-2">NT$ 450</div>
+          </div>
+          <a href="" class="btn btn-light btn-block text-primary font-weight-bold py-2"
+            style="font-size: 24px">加入購物車</a>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="item-card">
+          <div class="item-image" style="background-image: url(https://bit.ly/2QbVsVR)">
+            <div class="item-tag bg-primary p-2">本日精選</div>
+            <a href="#" class="heart text-primary" style="text-decoration: none;">
+              <i class="material-icons heart-border show">favorite_border</i>
+              <i class="material-icons heart-full">favorite</i>
+            </a>
 
+          </div>
+          <div class="d-flex text-center text-primary">
+            <div class="item-name col py-2">焦糖瑪卡龍</div>
+            <div class="item-price col py-2">NT$ 450</div>
+          </div>
+          <a href="" class="btn btn-light btn-block text-primary font-weight-bold py-2"
+            style="font-size: 24px">加入購物車</a>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="py-5 bg-primary">
     <div class="container">
       <div class="row justify-content-center">
@@ -90,10 +168,12 @@
         </div>
         <div class="col-md-5">
           <form action="" class="d-flex justify-content-center align-items-center position-relative">
-            <label for="email" class="mail-icon-absolute bg-light mb-0"><i
-                class="fas fa-envelope fa-lg text-primary"></i></label>
+            <label for="email" class="mail-icon-absolute bg-light mb-0">
+              <i class="material-icons text-primary">mail</i>
+            </label>
             <input type="email" name="email" id="email" class="mail-input form-control bg-light border-0">
-            <button type="submit" class="btn btn-warning px-4 py-3"><i class="fas fa-arrow-right fa-lg"></i></button>
+            <button type="submit" class="btn btn-warning px-4 py-3">
+              <i class="material-icons d-block">arrow_forward</i></button>
           </form>
         </div>
       </div>
