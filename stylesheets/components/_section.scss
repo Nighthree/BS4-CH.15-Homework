@@ -1,0 +1,19 @@
+.section {
+  max-height: 420px;
+}
+.section-break {
+  @media (min-width: 768px) {
+    margin-top: -24px;
+    margin-bottom: -24px;
+  }
+}
+.section-text {
+  color: theme-color("primary");
+  @media (min-width: 768px) {
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+  }
+}
+.section-image {
+  min-height: 250px;
+}

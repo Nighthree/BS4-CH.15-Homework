@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>六角甜點工坊 - 結帳Step 1</title>
+  <title>六角甜點工坊 - 結帳Step 2</title>
   <meta name="description" content="六角甜點工坊　今天是個吃甜點的好日子">
   <meta name="keyword" content="六角甜點工坊, 六角, 六腳甜點工坊, 六腳, 甜點, sweetaste, sweet,  taste, 蛋糕, 餅乾 ,馬卡龍">
   <meta property="og:title" content="今天是個吃甜點的好日子 | 六角甜點工坊">
@@ -48,56 +48,66 @@
       </div>
     </div>
   </nav>
+
   <section class="container px-0 px-md-3">
     <div class="row px-0 mx-0">
       <div class="col-lg-8">
         <form action="">
           <div class="bg-primary p-5 text-white">
+
             <div class="form-row py-2">
-              <div class="form-group col-6 h1">運送</div>
+              <div class="form-group col-6 h1">附款</div>
               <div class="form-group col-6">
                 <div class="checkline">
+                  <div class="checkpoint"><i class="checkfin fas fa-check-circle"></i></div>
                   <div class="checkpoint"><i class="checkcircle fas fa-circle"></i></div>
-                  <div class="checkpoint"></div>
                   <div class="checkpoint"></div>
                 </div>
               </div>
             </div>
+
+            <div class="form-group">
+              <label for="credit" class="h4">信用卡卡號</label>
+              <input type="number" name="credit" id="credit" class="form-control bg-light" placeholder="1234-5678-9876-5432">
+            </div>
+
+            <label for="credname" class="h4">持卡人姓名</label>
             <div class="form-row">
               <div class="form-group col-6">
-                <label for="firstname" class="h4">姓氏</label>
-                <input type="text" name="firstname" id="firstname" class="form-control bg-light" placeholder="王">
+                <input type="text" name="credname" id="credname" class="form-control bg-light" placeholder="王">
               </div>
               <div class="form-group col-6">
-                <label for="secondname" class="h4">名字</label>
-                <input type="text" name="secondname" id="secondname" class="form-control bg-light" placeholder="小名">
+                <input type="text" name="credname-2" id="credname-2" class="form-control bg-light" placeholder="小明">
               </div>
             </div>
 
-            <div class="form-group">
-              <label for="tel" class="h4">電話</label>
-              <input type="tel" name="tel" id="tel" class="form-control bg-light" placeholder="0912-345-678">
-            </div>
-            <label for="city" class="h4">地址</label>
+            <label for="validity-period-month" class="h4">有效期限</label>
             <div class="form-row">
               <div class="form-group col-6">
-                <select name="city" id="city" class="form-control bg-light" aria-placeholder="高雄市">
-                  <option value="Kaohsiung">高雄市</option>
+                <select name="validity-period-month" id="validity-period-month" class="form-control bg-light"
+                  aria-placeholder="月">
+                  <option value="2">2 月</option>
+                  <option value="3">3 月</option>
                 </select>
               </div>
               <div class="form-group col-6">
-                <label for="address" class="form-control sr-only">地區</label>
-                <select name="district" id="district" class="form-control bg-light" aria-placeholder="新興區">
-                  <option value="Sinsing">新興區</option>
+                <select name="validity-period-year" id="validity-period-year" class="form-control bg-light"
+                  aria-placeholder="年">
+                  <option value="2023">23</option>
+                  <option value="2024">24</option>
                 </select>
               </div>
             </div>
-            <div class="form-group">
-              <label for="address" class="form-control sr-only">街道</label>
-              <input type="address" name="address" id="address" class="form-control bg-light" placeholder="幸福路520號">
+
+            <div class="form-row">
+              <div class="form-group col-6">
+                <label for="CVV2" class="h4">背面三碼</label>
+                <input type="number" name="CVV2" id="CVV2" class="form-control bg-light" placeholder="000">
+              </div>
             </div>
+
           </div>
-          <a href="checkout-2.html" class="btn btn-warning btn-block btn-lg text-primary font-weight-bold">下一步</a>
+          <a href="checkout-3.html" class="btn btn-warning btn-block btn-lg text-primary font-weight-bold">下一步</a>
         </form>
       </div>
 

@@ -15,10 +15,6 @@
   -webkit-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
 }
-.section-break{
-  margin-top: -24px;
-  margin-bottom: -24px;
-}
 .btn-white{
   background-color: white;
   border: 1px solid $light;
@@ -35,4 +31,7 @@
     background-color: $light;
   }
   
+}
+.btn-block + .btn-block{
+  margin: 0;
 }

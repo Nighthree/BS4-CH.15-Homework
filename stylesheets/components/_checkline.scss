@@ -1,0 +1,46 @@
+.checkline {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  &:after {
+    height: 1px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    content: "";
+    top: 9.5px;
+  }
+}
+.checkpoint {
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  background-color: theme-color("primary");
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  .checkcircle {
+    font-size: 14px;
+    display: block;
+  }
+  .checkfin {
+    font-size: 20px;
+  }
+}
+
+.finish {
+  .checkline {
+    &:after {
+      background-color: theme-color("primary");
+    }
+    .checkpoint {
+      color: theme-color("primary");
+      border: 1px solid theme-color("primary");
+      background-color: white;
+    }
+  }
+}

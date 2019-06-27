@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>六角甜點工坊 - 結帳Step 1</title>
+  <title>六角甜點工坊 - 結帳Step 2</title>
   <meta name="description" content="六角甜點工坊　今天是個吃甜點的好日子">
   <meta name="keyword" content="六角甜點工坊, 六角, 六腳甜點工坊, 六腳, 甜點, sweetaste, sweet,  taste, 蛋糕, 餅乾 ,馬卡龍">
   <meta property="og:title" content="今天是個吃甜點的好日子 | 六角甜點工坊">
@@ -48,56 +48,76 @@
       </div>
     </div>
   </nav>
+
   <section class="container px-0 px-md-3">
     <div class="row px-0 mx-0">
       <div class="col-lg-8">
         <form action="">
           <div class="bg-primary p-5 text-white">
             <div class="form-row py-2">
-              <div class="form-group col-6 h1">運送</div>
+              <div class="form-group col-6 h1">發票</div>
               <div class="form-group col-6">
                 <div class="checkline">
+                  <div class="checkpoint"><i class="checkfin fas fa-check-circle"></i></div>
+                  <div class="checkpoint"><i class="checkfin fas fa-check-circle"></i></div>
                   <div class="checkpoint"><i class="checkcircle fas fa-circle"></i></div>
-                  <div class="checkpoint"></div>
-                  <div class="checkpoint"></div>
                 </div>
               </div>
             </div>
-            <div class="form-row">
-              <div class="form-group col-6">
-                <label for="firstname" class="h4">姓氏</label>
-                <input type="text" name="firstname" id="firstname" class="form-control bg-light" placeholder="王">
+
+            <div class="d-flex mb-3">
+              <a href="#" class="e-bill active">電子發票</a>
+              <a href="#" class="post-bill">郵寄發票</a>
+            </div>
+
+            <div class="e-bill-address open">
+              <div class="form-group">
+                <label for="e-bill-mail" class="h4">電子郵件信箱</label>
+                <input type="mail" name="e-bill-mail" id="e-bill-mail" class="form-control bg-light" placeholder="mail@mail.com">
               </div>
-              <div class="form-group col-6">
-                <label for="secondname" class="h4">名字</label>
-                <input type="text" name="secondname" id="secondname" class="form-control bg-light" placeholder="小名">
+
+              <div class="form-group">
+                <label for="vat-number" class="h4">統一編號 (選填)</label>
+                <input type="number" name="vat-number" id="vat-number" class="form-control bg-light" placeholder="12345678">
               </div>
             </div>
 
-            <div class="form-group">
-              <label for="tel" class="h4">電話</label>
-              <input type="tel" name="tel" id="tel" class="form-control bg-light" placeholder="0912-345-678">
-            </div>
-            <label for="city" class="h4">地址</label>
-            <div class="form-row">
-              <div class="form-group col-6">
-                <select name="city" id="city" class="form-control bg-light" aria-placeholder="高雄市">
-                  <option value="Kaohsiung">高雄市</option>
-                </select>
+            <div class="post-bill-address">
+              <div class="d-flex justify-content-between">
+                <label for="city" class="h4">地址</label>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label class="custom-control-label text-white" for="customCheck1">記住我</label>
+                </div>
               </div>
-              <div class="form-group col-6">
-                <label for="address" class="form-control sr-only">地區</label>
-                <select name="district" id="district" class="form-control bg-light" aria-placeholder="新興區">
-                  <option value="Sinsing">新興區</option>
-                </select>
+
+              <div class="form-row">
+                <div class="form-group col-6">
+                  <select name="city" id="city" class="form-control bg-light" aria-placeholder="高雄市">
+                    <option value="Kaohsiung">高雄市</option>
+                  </select>
+                </div>
+                <div class="form-group col-6">
+                  <label for="address" class="form-control sr-only">地區</label>
+                  <select name="district" id="district" class="form-control bg-light" aria-placeholder="新興區">
+                    <option value="Sinsing">新興區</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="address" class="form-control sr-only">街道</label>
+                <input type="address" name="address" id="address" class="form-control bg-light" placeholder="幸福路520號">
+              </div>
+
+              <div class="form-group">
+                <label for="vat-number" class="h4">統一編號 (選填)</label>
+                <input type="number" name="vat-number" id="vat-number" class="form-control bg-light" placeholder="12345678">
               </div>
             </div>
-            <div class="form-group">
-              <label for="address" class="form-control sr-only">街道</label>
-              <input type="address" name="address" id="address" class="form-control bg-light" placeholder="幸福路520號">
-            </div>
+
           </div>
-          <a href="checkout-2.html" class="btn btn-warning btn-block btn-lg text-primary font-weight-bold">下一步</a>
+          <a href="finish.html" class="btn btn-warning btn-block btn-lg text-primary font-weight-bold">結帳</a>
         </form>
       </div>
 
