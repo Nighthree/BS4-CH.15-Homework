@@ -11001,8 +11001,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media (min-width: 768px) {
   .section-break {
-    margin-top: -24px;
-    margin-bottom: -24px;
+    margin-top: -20px;
+    margin-bottom: -20px;
   }
 }
 
@@ -11020,5 +11020,14 @@ a.text-dark:hover, a.text-dark:focus {
 
 .section-image {
   min-height: 250px;
+}
+
+.credit-icon {
+  width: 56px;
+  height: 56px;
+}
+
+.credit-icon i {
+  line-height: 56px;
 }
 /*# sourceMappingURL=all.css.map */
