@@ -45,8 +45,23 @@
     }
   }
 }
-.card-body{
-  .cart-image{
+.card-body {
+  .cart-image {
     height: 80px;
+  }
+}
+
+.nextStep {
+  position: relative;
+  @media (max-width: 991.98px) {
+    width: 100vw;
+    margin-left: calc((100vw - 660px) / -2);
+  }
+  @media (max-width: 767.98px) {
+    margin-left: calc((100vw - 540px) / -2);
+  }
+  @media (max-width: 575.98px) {
+    margin: 0;
+    width: 100%;
   }
 }

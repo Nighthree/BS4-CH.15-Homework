@@ -10748,6 +10748,10 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .h496 {
   height: 496px;
 }
@@ -10894,6 +10898,30 @@ a.text-dark:hover, a.text-dark:focus {
 
 .card-body .cart-image {
   height: 80px;
+}
+
+.nextStep {
+  position: relative;
+}
+
+@media (max-width: 991.98px) {
+  .nextStep {
+    width: 100vw;
+    margin-left: calc((100vw - 660px) / -2);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .nextStep {
+    margin-left: calc((100vw - 540px) / -2);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .nextStep {
+    margin: 0;
+    width: 100%;
+  }
 }
 
 .checkline {
