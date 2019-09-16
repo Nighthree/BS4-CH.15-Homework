@@ -10900,10 +10900,6 @@ body {
   height: 80px;
 }
 
-.nextStep {
-  position: relative;
-}
-
 @media (max-width: 991.98px) {
   .nextStep {
     width: 100vw;
